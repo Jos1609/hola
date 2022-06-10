@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quieres ser mi novia</title>
+  <style>
+    .body {
+      background-color: crimson;
+      text-align: center;
+    }
+    .body__title{
+      color:white;
+    }
+    .body__img{
+      width: 50%;
+      border-radius: 50%;
+    }
+
+  </style>
+
+</head>
+
+<body class="body">
+    <h1 class="body__title">❤ ¿Quieres ser mi novia? ♥</h1>
+      <img
+        src="https://scontent-lim1-1.xx.fbcdn.net/v/t39.30808-6/287067722_551928609900274_887487359502576454_n.jpg?stp=dst-jpg_s851x315&_nc_cat=107&ccb=1-7&_nc_sid=da31f3&_nc_eui2=AeGeqIczP2sKDt7psHwuI32p-odpex706Cr6h2l7HvToKppHeOTOtb9PJijpsJhiCZpy_60AI1dV2dxGaXa4stT2&_nc_ohc=EdOlRfX_ebQAX9EuqWi&_nc_ht=scontent-lim1-1.xx&oh=00_AT98lqF6XLLd8Bbu3Y7X9duMHCc93e7onbn4GGFf5jAEFA&oe=62A733C1"
+        alt="Imagen del amor" class="body__img"/>
+    <button id = "yes">si</button>
+    <button id="no">😭Nel Perro😭</button>
+  
+
+  <script>
+    const btnsi = document.getElementById('yes');
+    const btno = document.getElementById('no');
+
+    const somos = () =>{
+      alert('♥ Wow, gracias amor por darme la oportunidad de estar contigo :3');
+      location.href = 'https://www.youtube.com/watch?v=x-0KoCAV4mc&list=RDx-0KoCAV4mc&start_radio=10'
+    }
+    const evitar = () =>{
+      btno.style.position = 'absolute';
+      btno.style.top = (Math.random() * window.innerHeight) + 'px';
+      btno.style.left = (Math.random() * window.innerWidth) + 'px';
+
+    }
+    btnsi.addEventListener('click',somos);
+    btno.addEventListener('mouseover', evitar);
+
+  </script>
+</body>
+
+</html>
